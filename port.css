@@ -3,37 +3,7 @@
     background-position: center;
     background-size: cover;
   }
-#proj-card-1{
-  top: 130%;
-  background-image: url('./imagine-dragon-evolve-aesthetic-6ami2p3j61w6ji7q.jpg');
-  background-position: center;
-  background-size: cover;
-
-} 
-#proj-card-2{
-  top: 230%;
-  background-image: url('./imagine-dragons-rise-up-jax2nalzmrzyq44o.jpg');
-  background-position: center;
-  background-size: cover;
-} 
-#proj-card-3{
-  top: 250%;
-  background-image: url('./imagine-dragon-evolve-aesthetic-6ami2p3j61w6ji7q.jpg');
-  background-position: center;
-  background-size: cover;
-} 
-.bottom-window{
-  background:url('./baground.png') 0% 0% / 600px ;
-    animation: 2s steps(10) 0s infinite normal none running bhaagja;
-}
-.bottom-window :hover{
-  animation: 2s steps(10) 0s infinite normal none running bhaagja;
-}
-@keyframes bhaagja{
-0% {
-  background-position: 0px center;
-}
-100% {
-  background-position: -600px center;
-}
+@font-face {
+  font-family: Basis;
+  src: url(./BASISGROTESQUEARABICPRO-REGULAR.TTF);
 }

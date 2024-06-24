@@ -1,28 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     const locoScroll = new LocomotiveScroll({
-//         el: document.querySelector('[data-scroll-container]'),
-//         smooth: true
-//         // Add more options as needed
-//     });
-// });
 
-// var t1 = gsap.timeline({scrollTrigger:{
-//     trigger:".proj-main-cont",
-//     markers:true,
-//     start:"80% 50%",
-//     end:"100% 50%",
-//     scrub:2,
-//     // pin:true,
-//     // smooth:true
-// }})
-// t1.to(".projects",{top:'-60%',},'a')
-// t1.to("#proj-card-1",{top:'30%',},'a')
-// t1.to("#proj-card-2",{top:'130%',},'a')
-// t1.to("#proj-card-2",{top:'32%',},'b')
-// t1.to("#proj-card-1",{width:"65%",height:"65vh"},'b')
-// t1.to("#proj-card-3",{top:"130%"},'b')
-// t1.to("#proj-card-3",{top:"45%"},'c')
-// t1.to("#proj-card-2",{width:"70%",height:"70vh"},'c')
 
 gsap.from(".about .center-about .one",{
     opacity:0,
@@ -48,5 +24,55 @@ gsap.from(".about .center-about .two",{
     start:"top 110%",
     end:"top 50%",
     scrub:2,
-    markers:true,
+    // markers:true,
 }})
+
+gsap.from(".down-nav ul a",{
+    y:-30,
+    opacity:0,
+    duration:0.8,
+    stagger:0.8,
+    ease:"none"
+})
+const cursor=document.querySelector(".CURSOR");
+window.addEventListener("mousemove",function(dets) {
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        duration:1,
+        zIndex:100,
+        ease:"back.out"
+    })
+})
+
+function projectsSections() {
+    gsap.to(".slide",{
+        scrollTrigger:{
+            trigger:".projects-container",
+            start:"top top",
+            end:"bottom bottom",
+            scrub:2,
+            // markers:true,
+        },
+        xPercent:-300,
+        ease:Power4
+    })
+}
+projectsSections();
+
+
+gsap.from(".all-skills div", {
+    scrollTrigger: {
+        trigger: ".all-skills",
+        start: "top 80%", 
+        end: "bottom 20%", 
+        // toggleActions: "play none none none"
+        scrub:true
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out"
+});
+

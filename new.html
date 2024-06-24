@@ -1,65 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="port.css">
 </head>
-<body>
-    <div class="stars">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-      </div>
-    <script src="script.js"></script>
+
+<body class="bg-black ">
+    <div class="CURSOR h-[2.5vh] w-[2.5vh] bg-black rounded-full fixed"></div>
+    <div class="main font-['Gilroy_Light'] bg-white overflow-hidden">
+        <div class="navbar flex flex-col items-center w-full pt-10 px-10 md:px-32">
+            <div class="in-nav flex justify-between items-center w-full">
+                <div class="logo">
+                    <div class="logo-name text-3xl font-bold flex items-end gap-2 leading-none">A<span class="font-light">K</span>.
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="work-open">
+                        <div class="open rounded-lg w-30 h-10 flex items-center px-5 gap-2">
+                            <div class="dot rounded-full h-[10px] w-[10px] bg-green-500"></div>
+                            <h1 class="text-xs font-bold text-white">Open to work</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="down-nav mt-4 md:mt-0">
+                <ul class="flex gap-10 flex-wrap justify-center md:justify-start">
+                    <li><a href="" class="hover:">Skills</a></li>
+                    <li><a href="" class="hover:">Projects</a></li>
+                    <li><a href="" class="hover:">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="home w-full min-h-[85vh] flex flex-col items-center relative md:flex-row">
+            <div class="left-home w-full md:w-1/2 py-20 px-8 md:px-16 flex flex-col items-center justify-center relative overflow-hidden">
+                <h2 class="text-[4vw] md:text-[3vw] lg:text-[2.5vw] font-bold flex items-center gap-4 text-center md:text-left">I'm
+                    <div class="h-[6vh] w-[20vw] md:h-[8vh] md:w-[25vw] lg:h-[10vh] lg:w-[30vw] rounded-full  bg-[url('./undraw_dev_productivity_re_fylf.svg')] bg-cover "></div>
+                </h2>
+                <h1 class="text-[10vw] md:text-[7vw] lg:text-[5vw] font-bold text-center md:text-left">Abhinava.</h1>
+                <h3 class="font-regular text-[5vw] md:text-[4vw] lg:text-[3vw] tracking-wide text-center md:text-left">Fullstack Web Developer</h3>
+            </div>
+            <div class="right-home w-full md:w-1/2 flex items-center justify-center scale-[1.1]">
+                <img src="./footer.png" alt="" class="max-w-full h-auto">
+            </div>
+        </div>
+        <div class="skills-container bg-gray-100 min-h-screen flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold mb-8">Skills</h1>
+                <div class="relative w-full max-w-4xl mx-auto">
+                    <div class="circle absolute inset-0 flex items-center justify-center">
+                        <!-- Skill items -->
+                        <div class="flex items-center justify-center p-6 bg-white shadow rounded-full transform origin-center transition-transform duration-500 ease-in-out hover:scale-110">
+                            <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="HTML5" class="w-16 h-16">
+                        </div>
+                        <div class="flex items-center justify-center p-6 bg-white shadow rounded-full transform origin-center transition-transform duration-500 ease-in-out hover:scale-110">
+                            <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS3" class="w-16 h-16">
+                        </div>
+                        <div class="flex items-center justify-center p-6 bg-white shadow rounded-full transform origin-center transition-transform duration-500 ease-in-out hover:scale-110">
+                            <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="JavaScript" class="w-16 h-16">
+                        </div>
+                        <!-- Add other skill items similarly -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="contact-cont bg-none sm:bg-[url('./person.png')] bg-right-bottom bg-[length:200px_150px] bg-no-repeat md:bg-[length:525px_400px] sm:bg-[length:300px_225px] ">
+            <div class="contact min-h-screen w-full flex flex-col p-6 md:p-12 lg:p-16 justify-between">
+                <footer class="w-full flex flex-col md:flex-row justify-between">
+                    <div class="w-full md:w-1/2 flex flex-col p-2">
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold opacity-60">Let's</h1>
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Connect.</h1>
+                        <div class="flex flex-col gap-4 md:gap-6 lg:gap-10 opacity-60">
+                            <h1 class="pt-2 md:pt-3 lg:pt-5">I'd love to hear from you! <br> Whether you have a question, a project idea, or just want to say hello, <br> feel free to get in touch.</h1>
+                            <h1 class="flex gap-2 md:gap-3 lg:gap-5 items-center"><i class="fas fa-location-dot"></i> I live in Mangaluru, India</h1>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col items-start gap-2 md:gap-3 lg:gap-5 p-2">
+                        <h1 class="font-bold text-lg md:text-xl">Looking forward to connecting with you!</h1>
+                        <a href="#" class="flex gap-2 md:gap-3 lg:gap-5 items-center">
+                            <h1></h1><i class="fab fa-instagram"></i>@k9_abhinav
+                        </a>
+                        <a href="#" class="flex gap-2 md:gap-3 lg:gap-5 items-center">
+                            <h1></h1><i class="fab fa-linkedin"></i>abhinavakrishna
+                        </a>
+                        <a href="#" class="flex gap-2 md:gap-3 lg:gap-5 items-center">
+                            <h1></h1><i class="fab fa-github"></i>imagineguy17
+                        </a>
+                        <a href="mailto:k9abhinava@gmail.com" class="flex gap-2 md:gap-3 lg:gap-5 items-center">
+                            <h1></h1><i class="fas fa-envelope"></i>k9abhinava@gmail.com
+                        </a>
+                    </div>
+                </footer>
+                <footer class="flex flex-col gap-2 md:gap-3 lg:gap-5 mt-6 md:mt-8 lg:mt-10">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold flex items-end gap-1 md:gap-2 leading-none">A<span class="font-light">K</span>. PORTFOLIO &copy; 2024</h1>
+                    <h1 class="text-sm md:text-base lg:text-lg">RUN THE DAY OR THE DAY RUNS YOU - Jim Rohn</h1>
+                </footer>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./port.js"></script>
 
 </body>
+
 </html>
