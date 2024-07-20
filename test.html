@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paint Patch with Curves</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .paint-patch {
+      background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      border-radius: 50% 50% 0 0 / 20% 20% 0 0;
+      clip-path: polygon(50% 0%, 100% 0, 75% 25%, 100% 50%, 50% 50%, 0 100%, 0 50%, 25% 25%, 0 0);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+  <div class="paint-patch max-w-4xl w-full h-64 p-8 text-center text-gray-800 text-4xl flex items-center justify-center">
+    Hello, Tailwind!
+  </div>
+
+</body>
+</html>
