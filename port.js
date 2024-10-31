@@ -75,4 +75,10 @@ gsap.from(".all-skills div", {
     stagger: 0.2,
     ease: "power2.out"
 });
+function navigateToProject() {
+    const screenWidth = window.innerWidth;
+    const targetSection = screenWidth >= 768 ? '#project' : '#mob-proj';
+    document.querySelector(targetSection).scrollIntoView({ behavior: 'smooth' });
+}
+
 
