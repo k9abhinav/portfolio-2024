@@ -11,10 +11,10 @@
 </head>
 <!-- font-['Gilroy_Light'] -->
 
-<body class=" font-['gilroy'] bg-white">
-    <div class="CURSOR h-[2.5vh] w-[2.5vh] bg-black rounded-full fixed"></div>
+<body class=" font-['gilroy'] bg-[#f8f7f4]">
+    <div class="CURSOR h-[2.5vh] w-[2.5vh] bg-white rounded-full fixed mix-blend-difference"></div>
     <div class="main  overflow-hidden">
-        <div class="navbar flex flex-col items-center w-full pt-10 px-10 md:px-32 bg-zinc-50">
+        <div class="navbar flex flex-col items-center w-full pt-10 px-10 md:px-32 ">
             <div class="in-nav flex justify-between items-center w-full">
                 <div class="logo">
                     <div class="logo-name text-3xl font-bold flex items-end gap-2 leading-none">A<span
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="down-nav mt-4 md:mt-0">
+            <div class="down-nav mt-4 md:mt-2">
                 <ul class="flex gap-10 flex-wrap justify-center md:justify-start">
                     <li><a href="#skills" class="hover:text-red-600 hover:font-bold">Skills</a></li>
                     <li><a onclick="navigateToProject()" class="hover:text-red-600 hover:font-bold">Projects</a></li>
@@ -45,15 +45,31 @@
                     class="text-[4vw] md:text-[3vw] lg:text-[2.5vw] font-bold flex items-center gap-4 text-center md:text-left">
                     I'm
                     <div
-                        class="h-[6vh] w-[18vw] md:h-[8vh] md:w-[23vw] lg:h-[10vh] lg:w-[25vw] rounded-full  bg-[url('https://img.freepik.com/free-photo/cartoon-sport-skateboarding-artwork_1409-6160.jpg?t=st=1730363050~exp=1730366650~hmac=2738a142896913583cdc11b82cfdc311e1a40efdfc8024ab9bc6daa4d8f3c778&w=1060')] bg-cover ">
+                        class="h-[6vh] w-[18vw] md:h-[8vh] md:w-[23vw] lg:h-[10vh] lg:w-[25vw] rounded-full  bg-[url('./hey.jpg')] bg-cover bg-center">
                     </div>
                 </h2>
                 <h1 class="text-[10vw] md:text-[7vw] lg:text-[5vw] font-bold text-center md:text-left">Abhinava.</h1>
                 <h3 class="font-regular text-[5vw] md:text-[4vw] lg:text-[3vw] tracking-wide text-center md:text-left">
                     Fullstack Web Developer</h3>
                 <div class="resume border-2-red p-2">
-                    <a href="https://drive.google.com/file/d/1OyELQogZqE8x2pFPxE3oHTJdKicc41r5/view?usp=drive_link"><button
-                            class="bg-red-600 p-2 rounded text-white ">Resume</button></a>
+                    <a href="https://drive.google.com/file/d/1OyELQogZqE8x2pFPxE3oHTJdKicc41r5/view?usp=drive_link"><button class="flex items-center px-5 py-2 rounded-lg bg-red-500 hover:bg-[#0D1117] font-bold text-sm transition-all transform active:scale-95 text-white">
+                        <span>My Resume</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 74 74"
+                          height="34"
+                          width="34"
+                          class="ml-2 transition-transform ease-in-out hover:translate-x-1"
+                        >
+                          <circle stroke-width="3" stroke="white" r="35.5" cy="37" cx="37"></circle>
+                          <path
+                            fill="white"
+                            d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                          ></path>
+                        </svg>
+                      </button>
+                      </a>
                 </div>
             </div>
             <div class="right-home w-full md:w-1/2 flex items-center justify-center scale-[1.1]">
@@ -62,9 +78,10 @@
         </div>
 
     </div>
+    <!-- bg-gradient-to-br from-[#403F44] to-[#1E1B32] -->
     <div id="skills"
-        class="skills-container bg-gradient-to-r from-black to-[#434343] text-white flex items-center justify-center min-h-screen">
-        <div class="text-center">
+        class="skills-container  text-white bg-[url('./skill.png')] bg-cover bg-no-repeat flex items-center justify-center min-h-screen">
+        <div class="text-center pb-14">
             <h1 class="text-[9vh] pt-10 mb-12 ">My Skills </h1>
             <div
                 class="all-skills grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 w-full max-w-4xl mx-auto mb-[5vh]">
@@ -121,14 +138,14 @@
         </div>
     </div>
 
-    <!-- bg-[#04070E] -->
+    <!-- bg-[#04070E] 0d1117 -->
     <div>
         <div
-            class="about flex flex-col w-full h-[150vh] md:h-[130vh] bg-[#0d1117] text-[#c9d1d9] gap-10 overflow-hidden hidden md:block">
+            class="about flex flex-col w-full h-[150vh] md:h-[130vh] bg-[#f8f7f4] bg-no-repeat bg-cover  text-[#0d1117] gap-10 overflow-hidden hidden md:block ">
             <div class="top-about flex w-full justify-start px-10 pt-20">
                 <div>
-                    <h1 class="text-xl">I'm a enthusiastic Developer I love to develop new things</h1>
-                    <h1 class="text-xl">Connecting the server and operations of API excites me</h1>
+                    <h1 class="text-xl">I'm a enthusiastic Developer with a knack for crafting elegant, user-friendly web applications.</h1>
+                    <h1 class="text-xl">I enjoy bringing ideas to life using the latest technologies and best practices.</h1>
                 </div>
             </div>
             <div class="center-about flex w-full justify-center  p-10">
@@ -139,12 +156,12 @@
                 </div>
             </div>
             <div class="below-about flex w-full justify-end  p-10">
-                <div class="text-xl ">
-                    <h1>Currently, I live in Mangaluru, India. I'm Student at Canara Engineering College.</h1>
-                    <h1>Waiting for oppurtunity to have some experience soon...</h1>
+                <div class="text-xl justify-end">
+                    <h1 class="">I'm always eager to collaborate on innovative projects and explore challenging problem-solving opportunities.</h1>
+                    <h1> If you're looking for a dedicated developer who thrives in dynamic environments, let's connect and create something impactful.</h1>
                 </div>
             </div>
-            <h1 class="text-6xl pl-24 pt-5 text-green-700 font-bold">My Projects</h1>
+            <h1 class="text-6xl pl-24 pt-16 text-[#0d1117] font-bold">My Projects</h1>
         </div>
         <div id="project"
             class="projects-container hidden md:block w-full bg-[url('https://images.unsplash.com/photo-1714279239071-bddde20e797b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover text-white ">
@@ -217,6 +234,7 @@
         </div>
         <div id="mob-proj" class="projects-container block md:hidden w-full bg-gray-900 text-white">
             <div class="inprojects h-auto relative py-10 px-4 sm:px-6 lg:px-8">
+                <h1 class="text-xl text-center pb-5 text-green-400 font-black">MY PROJECTS</h1>
                 <div class="project-grid grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <!-- Project Card -->
                     <div class="project-card p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -268,7 +286,7 @@
                                 question, a project idea, or just want to say hello, <br> feel free to get in touch.
                             </h1>
                             <h1 class="flex gap-2 md:gap-3 lg:gap-5 items-center"><i class="fas fa-location-dot"></i> I
-                                live in Mangaluru, India</h1>
+                                live in Mangaluru, India.</h1>
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 flex flex-col items-start gap-2 md:gap-3 lg:gap-5 p-2">
@@ -289,8 +307,8 @@
                 </footer>
                 <footer class="flex flex-col gap-2 md:gap-3 lg:gap-5 mt-6 md:mt-8 lg:mt-10">
                     <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold flex items-end gap-1 md:gap-2 leading-none">
-                        A<span class="font-light">K</span>. PORTFOLIO &copy; 2024</h1>
-                    <h1 class="text-sm md:text-base lg:text-lg">RUN THE DAY OR THE DAY RUNS YOU - Jim Rohn</h1>
+                        A<span class="font-light">K</span>. PORTFOLIO &copy; 2024.</h1>
+                    <h1 class="text-sm md:text-base lg:text-lg">RUN THE DAY OR THE DAY RUNS YOU - Jim Rohn.</h1>
                 </footer>
             </div>
         </div>

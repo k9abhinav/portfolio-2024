@@ -1,10 +1,8 @@
 
-
 gsap.from(".about .center-about .one",{
     opacity:0,
     x:-1000,
     smooth:true,
-
     scrollTrigger:{
     trigger:".about .center-about .one",
     scroller:"body",
@@ -17,7 +15,6 @@ gsap.from(".about .center-about .two",{
     opacity:0,
     x:1000,
     smooth:true,
-
     scrollTrigger:{
     trigger:".about .center-about .two",
     scroller:"body",
@@ -80,5 +77,19 @@ function navigateToProject() {
     const targetSection = screenWidth >= 768 ? '#project' : '#mob-proj';
     document.querySelector(targetSection).scrollIntoView({ behavior: 'smooth' });
 }
+
+gsap.from(".about .below-about",{
+    opacity:0,
+    y:-300,
+    smooth:true,
+
+    scrollTrigger:{
+    trigger:".about .below-about ",
+    scroller:"body",
+    start:"top 100%",
+    end:"top 20%",
+    scrub:2,
+    // markers:true,
+}})
 
 
