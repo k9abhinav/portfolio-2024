@@ -5,7 +5,7 @@ const Cursor = () => {
   const cursorRef = useRef(null);
 
   useEffect(() => {
-    const handleMouseMove = (dets) => {
+    window.addEventListener('mousemove', (dets) => {
       gsap.to(cursorRef.current, {
         x: dets.x,
         y: dets.y,
@@ -13,13 +13,7 @@ const Cursor = () => {
         zIndex: 100,
         ease: 'back.out',
       });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
+    });
   }, []);
 
   return (

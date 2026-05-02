@@ -22,16 +22,16 @@ const Contact = () => {
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-start gap-2 md:gap-3 lg:gap-5 p-2">
             <h1 className="font-bold text-lg md:text-xl">Looking forward to connecting with you!</h1>
-            <a href="https://instagram.com/k9_abhinav" className="flex gap-2 md:gap-3 lg:gap-5 items-center hover:text-red-600 transition-colors">
+            <a href="https://instagram.com/k9_abhinav" className="flex gap-2 md:gap-3 lg:gap-5 items-center hover:text-red-600">
               <i className="fab fa-instagram"></i>@k9_abhinav
             </a>
-            <a href="https://linkedin.com/in/abhinavakrishna" className="flex gap-2 md:gap-3 lg:gap-5 items-center hover:text-red-600 transition-colors">
+            <a href="https://linkedin.com/in/abhinavakrishna" className="flex gap-2 md:gap-3 lg:gap-5 items-center hover:text-red-600">
               <i className="fab fa-linkedin"></i>abhinavakrishna
             </a>
-            <a href="https://github.com/k9abhinav" className="flex gap-2 md:gap-3 lg:gap-5 items-center hover:text-red-600 transition-colors">
+            <a href="https://github.com/k9abhinav" className="flex gap-2 md:gap-3 lg:gap-5 items-center hover:text-red-600">
               <i className="fab fa-github"></i>k9abhinav
             </a>
-            <a href="mailto:abhinava03kks@gmail.com" className="flex gap-2 md:gap-3 lg:gap-5 items-center hover:text-red-600 transition-colors">
+            <a href="mailto:abhinava03kks@gmail.com" className="flex gap-2 md:gap-3 lg:gap-5 items-center hover:text-red-600">
               <i className="fas fa-envelope"></i>abhinava03kks@gmail.com
             </a>
           </div>
